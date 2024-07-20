@@ -19,7 +19,7 @@ book_array << Book.new("Bob Woodward", "All the President's Men", 30)
 
 puts "Sorting alphabetically by author"
 
-new_array = book_array.sort do |a, b|
+sort_by_author = book_array.sort do |a, b|
     author1 = a.author.downcase
     author2 = b.author.downcase
 
@@ -33,27 +33,27 @@ new_array = book_array.sort do |a, b|
     # end
 end
 
-puts new_array
+puts sort_by_author
 puts "```````````````````````````````"
 puts "Sorting alphabetically by title"
 
-new_array2 = book_array.sort do |a, b|
+sort_by_title = book_array.sort do |a, b|
     title1 = a.title.downcase
     title2 = b.title.downcase
 
     title1 <=> title2
 end
 
-puts new_array2
+puts sort_by_title
 
 puts "```````````````````````````````"
 puts "Sorting by count"
 
-new_array3 = book_array.sort do |a, b|
+sort_by_count = book_array.sort do |a, b|
     count1 = a.count
     count2 = b.count
 
     count1 <=> count2
 end
 
-puts new_array3
+puts sort_by_count
