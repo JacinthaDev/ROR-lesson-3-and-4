@@ -1,4 +1,4 @@
-def divisible_by_2
+def divisible_by_2_3_5
     array = []
     for i in 1..100
         if i % 2 == 0 || i % 3 == 0 || i % 5 == 0
@@ -8,4 +8,4 @@ def divisible_by_2
     puts array
 end
 
-divisible_by_2
+divisible_by_2_3_5
